@@ -1,0 +1,6 @@
+wdissector/
+*.tar.zst
+*.zip
+core
+core.*
+logs/
