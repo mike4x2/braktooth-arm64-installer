@@ -62,6 +62,9 @@ sudo apt-get install -y \
   build-essential \
   ca-certificates \
   curl \
+  procps \
+  procps \
+  procps \
   pkg-config \
   zstd \
   libglib2.0-dev \
@@ -177,6 +180,9 @@ resolve_archive() {
   log "Downloading release archive"
 
   curl \
+  procps \
+  procps \
+  procps \
     --fail \
     --location \
     --progress-bar \
@@ -254,7 +260,7 @@ log "Compiling and loading Bluetooth modules"
 rm -f "$MODULE_LOG"
 set +e
 
-timeout --signal=INT --kill-after=10s 90s \
+timeout --signal=INT --kill-after=15s 900s \
   ./bin/bt_exploiter --list-exploits \
   2>&1 |
   tee "$MODULE_LOG"
