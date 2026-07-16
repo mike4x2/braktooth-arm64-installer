@@ -1,6 +1,10 @@
 wdissector/
 *.tar.zst
 *.zip
+*.deb
 core
 core.*
 logs/
+/tmp/
+.DS_Store
+install.sh.before-clean-install-fixes
