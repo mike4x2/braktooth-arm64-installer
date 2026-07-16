@@ -63,8 +63,6 @@ sudo apt-get install -y \
   ca-certificates \
   curl \
   procps \
-  procps \
-  procps \
   pkg-config \
   zstd \
   libglib2.0-dev \
@@ -180,9 +178,6 @@ resolve_archive() {
   log "Downloading release archive"
 
   curl \
-  procps \
-  procps \
-  procps \
     --fail \
     --location \
     --progress-bar \
